@@ -1,0 +1,11 @@
+type Query {
+  getAllUsers(cursor: String, limit: Int): GetResponse
+  getAllEmails(limit: Int): GetEmailResponse
+  getUser(id: ID!): GetOneResponse!
+  getCount: GetTotalCount!
+}
+
+type Mutation {
+  updateUser(payload: UpdateUserInput): User!
+  deleteUser(id: ID!): DeletedUser!
+}

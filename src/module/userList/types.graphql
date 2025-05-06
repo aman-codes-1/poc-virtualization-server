@@ -1,0 +1,81 @@
+type User {
+  originalId: ID!
+  name: String!
+  email: String!
+  phone: String!
+  city: String!
+  geolocation: String!
+  website: String!
+  company: String!
+  fullDetails: [details]!
+  role: String!
+  createdAt: String
+}
+type details {
+  businessHistory: business!
+  accountHistory: account!
+}
+
+type business {
+  name: String!
+  date: String!
+  amount: String!
+}
+
+type account {
+  name: String!
+  number: String!
+  type: String!
+}
+
+type UserEmail {
+  originalId: ID!
+  email: String!
+}
+
+type pageinfo {
+  hasNextPage: Boolean!
+  endCursor: String!
+}
+
+type GetResponse {
+  message: String!
+  cursor: String
+  count: Int
+  node: [User]!
+  pageInfo: pageinfo
+}
+
+type GetEmailResponse {
+  message: String!
+  count: Int
+  node: [UserEmail]!
+}
+
+type GetOneResponse {
+  status: Int!
+  message: String!
+  data: User!
+}
+
+input UpdateUserInput {
+  originalId: ID!
+  name: String
+  email: String
+  phone: String
+  city: String
+  geolocation: String
+  website: String
+  company: String
+  role: String
+  createdAt: String
+}
+
+type DeletedUser {
+  id: ID!
+}
+
+type GetTotalCount {
+  message: String!
+  count: Int!
+}
