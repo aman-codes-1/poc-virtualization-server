@@ -4,7 +4,7 @@ import config from '../config/configurations';
 export class UserListAPI extends RESTDataSource {
   constructor() {
     super();
-    this.baseURL = `${config.serviceUrl}api/user`;
+    this.baseURL = `${config.serviceUrl}/api/user`;
   }
 
   read(payload) {
