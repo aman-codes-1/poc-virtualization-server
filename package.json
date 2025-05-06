@@ -4,6 +4,7 @@
   "description": "We usually face performance issue when a lot of data comes into memory on frontend especially whenever we talk about dropdowns and tables.",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d dist --copy-files",
     "start": "NODE_ENV=production babel-node src/index.js",
     "start:dev": "nodemon --exec babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,10 +20,11 @@
   },
   "homepage": "https://github.com/mo-aman/server-apollo#readme",
   "devDependencies": {
+    "@babel/cli": "^7.27.1",
     "@babel/core": "7.16.5",
     "@babel/eslint-parser": "7.16.5",
     "@babel/node": "^7.27.1",
-    "@babel/preset-env": "7.16.5",
+    "@babel/preset-env": "^7.27.1",
     "eslint": "8.5.0",
     "eslint-config-airbnb": "19.0.2",
     "nodemon": "2.0.15"
