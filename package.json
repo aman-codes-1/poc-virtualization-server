@@ -20,16 +20,16 @@
   },
   "homepage": "https://github.com/mo-aman/server-apollo#readme",
   "devDependencies": {
-    "@babel/cli": "^7.27.1",
-    "@babel/core": "^7.27.1",
-    "@babel/eslint-parser": "^7.27.1",
-    "@babel/node": "^7.27.1",
-    "@babel/preset-env": "^7.27.1",
     "eslint": "8.5.0",
     "eslint-config-airbnb": "19.0.2",
     "nodemon": "2.0.15"
   },
   "dependencies": {
+    "@babel/cli": "^7.27.1",
+    "@babel/core": "^7.27.1",
+    "@babel/eslint-parser": "^7.27.1",
+    "@babel/node": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
     "@graphql-tools/load-files": "6.5.3",
     "@graphql-tools/merge": "8.2.1",
     "apollo-datasource-rest": "3.4.0",
