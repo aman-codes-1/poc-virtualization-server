@@ -21,8 +21,8 @@
   "homepage": "https://github.com/mo-aman/server-apollo#readme",
   "devDependencies": {
     "@babel/cli": "^7.27.1",
-    "@babel/core": "7.16.5",
-    "@babel/eslint-parser": "7.16.5",
+    "@babel/core": "^7.27.1",
+    "@babel/eslint-parser": "^7.27.1",
     "@babel/node": "^7.27.1",
     "@babel/preset-env": "^7.27.1",
     "eslint": "8.5.0",
